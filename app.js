@@ -12,6 +12,12 @@
 3. bulid a function that checks the question if it is rigth it sets the body to the wrong color and then calls a function that updates the dom to the next question and adds new answers
 4. add event listeners on all buttons to check if they are the correct answers
 
+
+    loop throught the object; 
+    while 
+    creat a varbaile 
+    fuction
+    set timeOUT
 */
 
 const body = document.querySelector("body")
@@ -31,7 +37,9 @@ let answersOBJ = [
     {"question": "How many Tailed Beasts (Biju) existed?", "options": ["1","8","9","10"], "answer" : "10"},
 ];
 
+
 //event Listeners
+
 
 choice1.addEventListener("click", checkAnswer,updateQuestion);
 choice2.addEventListener("click", checkAnswer,updateQuestion);
@@ -72,4 +80,3 @@ function updateQuestion() {
     choice3.innerText = answersOBJ["options"][2];
     choice4.innerText = answersOBJ["options"][3];
 }
-
